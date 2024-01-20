@@ -22,7 +22,7 @@ console.log(numberOfFilms);
 
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
-        const firstQuestion = prompt('Один из последних просмотренных фильмов?', '');
+        const firstQuestion = prompt('Один из последних просмотренных фильмов?', '').trim();
         const secondQuestion = prompt('На сколько оцените его?', '');
     
         if(firstQuestion != null && secondQuestion != null && firstQuestion != '' && secondQuestion != '' && firstQuestion.length < 50) {
